@@ -42,12 +42,71 @@ export default function SurveyClient({
   const [selectedOptionIds, setSelectedOptionIds] = useState<string[]>([]);
   const [isLanguageCardCollapsed, setIsLanguageCardCollapsed] = useState(false);
 
+  const t = {
+    ja: {
+      editLang: "言語設定を編集",
+      summary: (koreanLabel: string, preferOn: boolean) =>
+        `韓国語: ${koreanLabel ?? "未選択"} / 日本語優先: ${preferOn ? "ON" : "OFF"}`,
+      open: "開く",
+      koLevelTitle: "あなたの韓国語レベル",
+      koLevelSub: "目安でOKです",
+      collapse: "たたむ",
+      preferTitle: "日本語対応があるアイドルを優先",
+      preferHint: "おすすめ：ON",
+      koLevels: {
+        none: "ほぼ話せない",
+        beginner: "初級",
+        intermediate: "中級",
+        advanced: "上級",
+        native: "ネイティブ",
+      },
+    },
+    ko: {
+      editLang: "언어 설정 편집",
+      summary: (koreanLabel: string, preferOn: boolean) =>
+        `한국어: ${koreanLabel ?? "미선택"} / 일본어 우선: ${preferOn ? "ON" : "OFF"}`,
+      open: "열기",
+      koLevelTitle: "당신의 한국어 레벨",
+      koLevelSub: "대략이면 OK",
+      collapse: "접기",
+      preferTitle: "일본어 대응 있는 아이돌 우선",
+      preferHint: "추천: ON",
+      koLevels: {
+        none: "거의 못 함",
+        beginner: "초급",
+        intermediate: "중급",
+        advanced: "상급",
+        native: "네이티브",
+      },
+    },
+    en: {
+      editLang: "Edit language settings",
+      summary: (koreanLabel: string, preferOn: boolean) =>
+        `Korean: ${koreanLabel ?? "Not set"}`,
+      open: "Open",
+      koLevelTitle: "Your Korean level",
+      koLevelSub: "A rough estimate is fine",
+      collapse: "Collapse",
+      preferTitle: "Prioritize idols with JP support",
+      preferHint: "Recommended: ON",
+      koLevels: {
+        none: "Hardly speak",
+        beginner: "Beginner",
+        intermediate: "Intermediate",
+        advanced: "Advanced",
+        native: "Native",
+      },
+    },
+  } as const;
+
+  const localeText = t[locale];
+
   const koreanLevelOptions: { value: KoreanLevel; label: string }[] = [
-    { value: "none", label: "ほぼ話せない" },
-    { value: "beginner", label: "超初級" },
-    { value: "intermediate", label: "中級" },
-    { value: "advanced", label: "上級" },
-    { value: "native", label: "ネイティブ" },
+    { value: "none", label: localeText.koLevels.none },
+    { value: "beginner", label: localeText.koLevels.beginner },
+    { value: "intermediate", label: localeText.koLevels.intermediate },
+    { value: "advanced", label: localeText.koLevels.advanced },
+    { value: "native", label: localeText.koLevels.native },
   ];
 
   const recommendedPrefer =
@@ -196,6 +255,7 @@ const handleSkipMulti = () => {
         <ProgressBar
           current={state.currentQuestionIndex + 1}
           total={questions.length}
+          locale={locale}
         />
       </div>
 
@@ -208,28 +268,31 @@ const handleSkipMulti = () => {
             className="w-full flex items-center justify-between gap-3 px-3 py-2 rounded-lg border border-gray-200 bg-white shadow-sm text-sm text-gray-700 hover:border-orange-200 transition"
           >
             <div className="flex flex-col text-left leading-tight">
-              <span className="font-semibold">言語設定を編集</span>
+              <span className="font-semibold">{localeText.editLang}</span>
               <span className="text-xs text-gray-500">
-                {`韓国語: ${koreanLevelOptions.find((o) => o.value === state.koreanLevel)?.label ?? "未選択"} / 日本語優先: ${state.preferJapaneseSupport ? "ON" : "OFF"}`}
+                {localeText.summary(
+                  koreanLevelOptions.find((o) => o.value === state.koreanLevel)?.label ?? "",
+                  state.preferJapaneseSupport
+                )}
               </span>
             </div>
             <span className="text-xs px-2 py-1 rounded-full bg-orange-50 text-orange-600 border border-orange-100">
-              開く
+              {localeText.open}
             </span>
           </button>
         ) : (
           <div className="p-4 rounded-lg bg-white shadow-sm border border-gray-100">
             <div className="flex items-center justify-between mb-3">
               <div>
-                <p className="text-sm font-semibold text-gray-800">あなたの韓国語レベル</p>
-                <p className="text-xs text-gray-500">目安でOKです</p>
+                <p className="text-sm font-semibold text-gray-800">{localeText.koLevelTitle}</p>
+                <p className="text-xs text-gray-500">{localeText.koLevelSub}</p>
               </div>
               <button
                 type="button"
                 onClick={() => setIsLanguageCardCollapsed(true)}
                 className="text-xs text-gray-400 hover:text-gray-600 transition"
               >
-                たたむ
+                {localeText.collapse}
               </button>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -252,35 +315,37 @@ const handleSkipMulti = () => {
               })}
             </div>
 
-            <div className="mt-4 pt-3 border-t border-gray-100">
-              <div className="flex items-center justify-between gap-3">
-                <div>
-                  <p className="text-sm font-semibold text-gray-800">
-                    日本語対応があるアイドルを優先
-                  </p>
-                  <p className="text-xs text-gray-500">
-                    おすすめ：ON
-                  </p>
-                </div>
-                <label className="inline-flex items-center cursor-pointer">
-                  <input
-                    type="checkbox"
-                    className="sr-only peer"
-                    checked={state.preferJapaneseSupport}
-                    onChange={(e) => handlePreferToggle(e.target.checked)}
-                  />
-                  <div
-                    className="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:bg-orange-400 transition-colors"
-                  >
-                    <div
-                      className={`h-5 w-5 bg-white rounded-full shadow transform transition-transform mt-0.5 ml-0.5 ${
-                        state.preferJapaneseSupport ? "translate-x-5" : ""
-                      }`}
-                    />
+            {locale !== "en" && (
+              <div className="mt-4 pt-3 border-t border-gray-100">
+                <div className="flex items-center justify-between gap-3">
+                  <div>
+                    <p className="text-sm font-semibold text-gray-800">
+                      {localeText.preferTitle}
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      {localeText.preferHint}
+                    </p>
                   </div>
-                </label>
+                  <label className="inline-flex items-center cursor-pointer">
+                    <input
+                      type="checkbox"
+                      className="sr-only peer"
+                      checked={state.preferJapaneseSupport}
+                      onChange={(e) => handlePreferToggle(e.target.checked)}
+                    />
+                    <div
+                      className="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:bg-orange-400 transition-colors"
+                    >
+                      <div
+                        className={`h-5 w-5 bg-white rounded-full shadow transform transition-transform mt-0.5 ml-0.5 ${
+                          state.preferJapaneseSupport ? "translate-x-5" : ""
+                        }`}
+                      />
+                    </div>
+                  </label>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         )}
       </div>
@@ -299,7 +364,8 @@ const handleSkipMulti = () => {
           selectedOptionIds={isMulti ? selectedOptionIds : undefined}
           onSubmitMulti={isMulti ? handleSubmitMulti : undefined}
           onSkipMulti={
-            isMulti && currentQuestion.id === "q_cover_artist"
+            isMulti &&
+            (currentQuestion.id === "q_cover_artist" || currentQuestion.id === "q_genre_worldview")
               ? handleSkipMulti
               : undefined
           }
@@ -322,7 +388,7 @@ const handleSkipMulti = () => {
         }}
         className="mt-8 text-sm text-gray-400 hover:text-gray-600 transition-colors"
       >
-        最初からやり直す
+        {locale === "ko" ? "처음부터 다시" : locale === "en" ? "Start over" : "最初からやり直す"}
       </button>
     </div>
   );

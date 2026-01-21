@@ -38,7 +38,7 @@ export default function ShareButtons({
   // シェアテキストを生成
   const generateShareText = (): string => {
     const intro = locale === "ko"
-      ? "최애 체커로 진단했더니..."
+      ? "오시체커로 진단했더니..."
       : locale === "en"
       ? "My Oshi Checker results..."
       : "推しチェッカーで診断したら…";
@@ -60,7 +60,7 @@ export default function ShareButtons({
       .join("\n");
 
     const hashtags = locale === "ko"
-      ? "#최애체커 #한국인디아이돌 #최애진단"
+      ? "#오시체커 #한국인디아이돌 #최애진단"
       : locale === "en"
       ? "#OshiChecker #KUndergroundIdol #BiasDiagnosis"
       : "#推しチェッカー #韓国地下アイドル #推し診断";

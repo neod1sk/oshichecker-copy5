@@ -1,21 +1,21 @@
 {
   "common": {
     "appName": "推しチェッカー",
-    "appTagline": "韓国地下アイドル診断",
+    "appTagline": "韓国地下アイドル入門診断",
     "restart": "最初からやり直す",
     "loading": "読み込み中..."
   },
   "home": {
     "title": "推しチェッカー",
-    "subtitle": "韓国地下アイドル診断",
+    "subtitle": "韓国地下アイドル入門診断",
     "description": "いくつかの質問に答えて、あなたにぴったりの",
     "descriptionHighlight": "推しメンバー",
     "descriptionEnd": "を見つけよう！",
     "step1": "アンケート（約1分）",
-    "step2": "二択バトル（10回）",
-    "step3": "結果発表（TOP3）",
+    "step2": "直感セレクト（10回）",
+    "step3": "結果発表（TOP3＋最終候補5人）",
     "startButton": "診断スタート",
-    "footer": "© 2025 推しチェッカー"
+    "footer": "© 2026 推しチェッカー"
   },
   "survey": {
     "title": "アンケート",

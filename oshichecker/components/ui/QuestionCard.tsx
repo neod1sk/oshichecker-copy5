@@ -31,10 +31,31 @@ export default function QuestionCard({
   questionNumber,
   totalQuestions,
 }: QuestionCardProps) {
+  const labels = {
+    ja: {
+      next: "次へ",
+      skip: "スキップする",
+      selected: (cur: number, max: number, min: number) => `${cur}/${max} 選択中（最低 ${min}）`,
+      genreTitle: "好きなジャンル（最大2つまで）",
+    },
+    ko: {
+      next: "다음",
+      skip: "건너뛰기",
+      selected: (cur: number, max: number, min: number) => `${cur}/${max} 선택됨 (최소 ${min})`,
+      genreTitle: "좋아하는 장르 (최대 2개)",
+    },
+    en: {
+      next: "Next",
+      skip: "Skip",
+      selected: (cur: number, max: number, min: number) => `${cur}/${max} selected (min ${min})`,
+      genreTitle: "Favorite genres (up to 2)",
+    },
+  } as const;
+
+  const l = labels[locale];
+
   const questionText =
-    question.id === "q_genre_worldview"
-      ? "好きなジャンル（最大2つまで）"
-      : getLocalizedText(question, locale);
+    question.id === "q_genre_worldview" ? l.genreTitle : getLocalizedText(question, locale);
   const isMulti = question.type === "multi";
   const minSelect = question.minSelect ?? 1;
   const maxSelect = question.maxSelect ?? question.options.length;
@@ -55,7 +76,7 @@ export default function QuestionCard({
         {questionText}
       </h2>
 
-      {isMulti && onSkipMulti && (
+      {isMulti && onSubmitMulti && (
         <div className="text-right mb-3 space-y-2">
           <div className="flex justify-end">
             <button
@@ -68,16 +89,18 @@ export default function QuestionCard({
                   : "bg-gray-200 text-gray-400 cursor-not-allowed"
               }`}
             >
-              次へ
+              {l.next}
             </button>
           </div>
-          <button
-            type="button"
-            onClick={onSkipMulti}
-            className="text-sm text-gray-500 hover:text-orange-500 transition-colors"
-          >
-            スキップする
-          </button>
+          {onSkipMulti && (
+            <button
+              type="button"
+              onClick={onSkipMulti}
+              className="text-sm text-gray-500 hover:text-orange-500 transition-colors"
+            >
+              {l.skip}
+            </button>
+          )}
         </div>
       )}
 
@@ -145,7 +168,7 @@ export default function QuestionCard({
       {isMulti && (
         <div className="mt-4 flex items-center justify-between">
           <div className="text-xs text-gray-500">
-            {selectedOptionIds.length}/{maxSelect} 選択中（最低 {minSelect}）
+            {l.selected(selectedOptionIds.length, maxSelect, minSelect)}
           </div>
           <button
             type="button"
@@ -157,7 +180,7 @@ export default function QuestionCard({
                 : "bg-gray-200 text-gray-400 cursor-not-allowed"
             }`}
           >
-            次へ
+            {l.next}
           </button>
         </div>
       )}

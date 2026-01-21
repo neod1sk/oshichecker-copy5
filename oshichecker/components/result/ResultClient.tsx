@@ -29,6 +29,20 @@ export default function ResultClient({ locale, groups, dict }: ResultClientProps
   const [showResults, setShowResults] = useState(false);
   const resultCardRef = useRef<HTMLDivElement>(null);
 
+  const watermarkText =
+    locale === "ko"
+      ? "이미지는 아이돌 트윗을 인용했습니다"
+      : locale === "en"
+      ? "Images are quoted from idols' tweets"
+      : "画像はアイドルのツイートから引用しています";
+
+  const footerText =
+    locale === "ko"
+      ? "© 2026 오시체커"
+      : locale === "en"
+      ? "© 2026 Oshi Checker"
+      : "© 2026 推しチェッカー";
+
   // 結果がない場合のリダイレクト
   useEffect(() => {
     if (state.finalRanking.length === 0 && !isBattleComplete) {
@@ -140,7 +154,7 @@ export default function ResultClient({ locale, groups, dict }: ResultClientProps
 
         {/* ウォーターマーク（画像保存時に表示） */}
         <div className="mt-3 text-center text-xs text-gray-400">
-          画像はアイドルのツイートから引用しています
+          {watermarkText}
         </div>
       </div>
 
@@ -175,7 +189,7 @@ export default function ResultClient({ locale, groups, dict }: ResultClientProps
 
       {/* フッター */}
       <p className="mt-4 text-gray-400 text-xs">
-        © 2025 推しチェッカー
+        {footerText}
       </p>
     </div>
   );

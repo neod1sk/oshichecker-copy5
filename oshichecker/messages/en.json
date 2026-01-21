@@ -7,15 +7,15 @@
   },
   "home": {
     "title": "Oshi Checker",
-    "subtitle": "K-Underground Idol Diagnosis",
-    "description": "Answer a few questions and find your perfect",
-    "descriptionHighlight": "bias member",
+    "subtitle": "K-Underground Idol Intro Diagnosis",
+    "description": "Answer a few questions and find your perfect ",
+    "descriptionHighlight": "oshi member",
     "descriptionEnd": "!",
     "step1": "Survey (about 1 min)",
-    "step2": "Battle (10 rounds)",
-    "step3": "Results (TOP 3)",
+    "step2": "Intuitive Select (10 rounds)",
+    "step3": "Results (TOP 3 + Final 5 Candidates)",
     "startButton": "Start Diagnosis",
-    "footer": "© 2025 Oshi Checker"
+    "footer": "© 2026 Oshi Checker"
   },
   "survey": {
     "title": "Survey",

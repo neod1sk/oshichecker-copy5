@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: ResultPageProps): Promise<Met
   
   const titles = {
     ja: "診断結果 | 推しチェッカー",
-    ko: "진단 결과 | 최애 체커",
+    ko: "진단 결과 | 오시체커",
     en: "Results | Oshi Checker",
   };
   
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: ResultPageProps): Promise<Met
       type: "website",
       locale: locale === "ko" ? "ko_KR" : locale === "en" ? "en_US" : "ja_JP",
       url: `${SITE_URL}/${locale}/result`,
-      siteName: locale === "ko" ? "최애 체커" : locale === "en" ? "Oshi Checker" : "推しチェッカー",
+      siteName: locale === "ko" ? "오시체커" : locale === "en" ? "Oshi Checker" : "推しチェッカー",
       title,
       description,
       images: [
