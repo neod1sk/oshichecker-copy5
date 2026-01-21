@@ -32,8 +32,9 @@
   },
   "result": {
     "title": "結果発表",
-    "subtitle": "あなたの推しメンバー TOP3",
+    "subtitle": "あなたの推しメンバー候補 TOP3",
     "yourOshi": "あなたの推し",
+    "finalCandidates": "最終候補メンバー",
     "rank1": "1位",
     "rank2": "2位",
     "rank3": "3位",

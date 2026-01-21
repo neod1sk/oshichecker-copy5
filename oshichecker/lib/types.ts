@@ -21,6 +21,7 @@ export interface Member {
   nameKo?: string;
   nameEn?: string;
   groupId: string;
+  xUrl?: string;
   photoUrl: string; // 外部URL or ローカルパス
   tags: string[]; // 属性タグ（例: ["cute", "energetic"]）
   scores: Record<string, number>; // 属性スコア（例: { cute: 5, cool: 2 }）
@@ -90,7 +91,7 @@ export interface DiagnosisState {
   currentBattleRound: number; // 現在のバトル回数（1〜10）
 
   // 結果
-  finalRanking: CandidateMember[]; // 最終ランキング（上位3名）
+  finalRanking: CandidateMember[]; // 最終ランキング（上位8名）
 }
 
 // ===========================================
@@ -114,4 +115,4 @@ export type DiagnosisAction =
 
 export const BATTLE_ROUNDS = 10; // バトル回数
 export const CANDIDATE_COUNT = 8; // 候補メンバー数
-export const RESULT_COUNT = 3; // 結果表示数
+export const RESULT_COUNT = 3; // 結果表示数（カード上部で使う上位3件）

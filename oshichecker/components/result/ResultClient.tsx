@@ -7,6 +7,7 @@ import { Locale } from "@/i18n.config";
 import { RESULT_COUNT, Group } from "@/lib/types";
 import ResultMemberCard from "./ResultMemberCard";
 import ShareButtons from "./ShareButtons";
+import { getLocalizedName } from "@/lib/utils";
 
 interface ResultClientProps {
   locale: Locale;
@@ -20,6 +21,7 @@ interface ResultClientProps {
     share: string;
     shareX: string;
     saveImage: string;
+    finalCandidates: string;
   };
 }
 
@@ -42,6 +44,11 @@ export default function ResultClient({ locale, groups, dict }: ResultClientProps
       : locale === "en"
       ? "© 2026 Oshi Checker"
       : "© 2026 推しチェッカー";
+
+  const getGroupName = (groupId: string): string => {
+    const group = groups.find((g) => g.id === groupId);
+    return group ? getLocalizedName(group, locale) : "";
+  };
 
   // 結果がない場合のリダイレクト
   useEffect(() => {
@@ -83,6 +90,7 @@ export default function ResultClient({ locale, groups, dict }: ResultClientProps
   const first = topMembers[0];
   const second = topMembers[1];
   const third = topMembers[2];
+  const remainingCandidates = state.finalRanking.slice(3, 8);
 
   return (
     <div className="flex flex-col items-center py-2">
@@ -110,6 +118,7 @@ export default function ResultClient({ locale, groups, dict }: ResultClientProps
                 candidate={first}
                 rank={1}
                 locale={locale}
+            groupName={getGroupName(first.member.groupId)}
                 size="large"
               />
             </div>
@@ -129,6 +138,7 @@ export default function ResultClient({ locale, groups, dict }: ResultClientProps
                   candidate={second}
                   rank={2}
                   locale={locale}
+                groupName={getGroupName(second.member.groupId)}
                   size="small"
                 />
               </div>
@@ -145,6 +155,7 @@ export default function ResultClient({ locale, groups, dict }: ResultClientProps
                   candidate={third}
                   rank={3}
                   locale={locale}
+                groupName={getGroupName(third.member.groupId)}
                   size="small"
                 />
               </div>
@@ -186,6 +197,34 @@ export default function ResultClient({ locale, groups, dict }: ResultClientProps
           {dict.restart}
         </button>
       </div>
+
+      {/* 4〜8位の最終候補（TOP3除外） */}
+      {remainingCandidates.length > 0 && (
+        <div
+          className={`
+            mt-4 w-full max-w-sm space-y-2
+            transition-all duration-500 delay-500
+            ${showResults ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}
+          `}
+        >
+          <p className="text-sm font-semibold text-gray-700 text-center">
+            {dict.finalCandidates}
+          </p>
+          <div className="flex flex-col gap-2">
+            {remainingCandidates.map((candidate, idx) => (
+              <ResultMemberCard
+                key={candidate.member.id}
+                candidate={candidate}
+                rank={idx + 4}
+                locale={locale}
+                groupName={getGroupName(candidate.member.groupId)}
+                hideOverlayName
+                size="mini"
+              />
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* フッター */}
       <p className="mt-4 text-gray-400 text-xs">

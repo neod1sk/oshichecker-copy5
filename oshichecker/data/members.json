@@ -5,6 +5,7 @@
     "nameKo": "하루나",
     "nameEn": "HARUNA",
     "groupId": "KOKOIYA",
+    "xUrl": "https://x.com/kokoiya_haruna",
     "photoUrl": "https://assets.st-note.com/img/1760014024-kNdoiFG94b0jKTnIwcp5qz2S.jpg?width=1200",
     "tags": ["sexy", "kind", "facial"],
     "scores": {
@@ -38,6 +39,7 @@
     "nameKo": "마츠",
     "nameEn": "MATSU",
     "groupId": "KOKOIYA",
+    "xUrl": "https://x.com/kokoiya_matsu",
     "photoUrl": "https://assets.st-note.com/img/1760014002-DrfHlORBhoGvV6cZbqkX2F9u.jpg?width=1200",
     "tags": ["dance", "vocal", "charming"],
     "scores": {
@@ -71,6 +73,7 @@
     "nameKo": "히나",
     "nameEn": "HINA",
     "groupId": "KOKOIYA",
+    "xUrl": "https://x.com/kokoiya_hina",
     "photoUrl": "https://assets.st-note.com/img/1760013558-WHvxhqltbpmPGwi7sJy9UNnO.jpg?width=1200",
     "tags": ["cute", "comfort", "face_dog"],
     "scores": {
@@ -104,6 +107,7 @@
     "nameKo": "먀오",
     "nameEn": "MYAO",
     "groupId": "KOKOIYA",
+    "xUrl": "https://x.com/kokoiya_myao",
     "photoUrl": "https://assets.st-note.com/img/1760013972-LN6tx8yb9fVXrWdKYgc0O2vB.jpg?width=1200",
     "tags": ["elegant", "charming", "growth"],
     "scores": {
@@ -137,6 +141,7 @@
     "nameKo": "리코",
     "nameEn": "RIKO",
     "groupId": "H7KD",
+    "xUrl": "https://x.com/H7KD_riko",
     "photoUrl": "https://assets.st-note.com/img/1761488789-ZLdkRMFUOV5u27hvHYxDBgq3.jpg?width=1200",
     "tags": ["youthful", "stability", "talk"],
     "scores": {
@@ -166,6 +171,7 @@
     "nameKo": "미야미",
     "nameEn": "MIYAMI",
     "groupId": "H7KD",
+    "xUrl": "https://x.com/H7KD_miyami",
     "photoUrl": "https://assets.st-note.com/img/1761488828-4SABNojElWDK5PFhCn3RTvzm.jpg?width=1200",
     "tags": ["dance", "energy", "recognition"],
     "scores": {
@@ -195,6 +201,7 @@
     "nameKo": "요루",
     "nameEn": "YORU",
     "groupId": "H7KD",
+    "xUrl": "https://x.com/H7KD_yoru",
     "photoUrl": "https://assets.st-note.com/img/1761488844-7yKXnhDF5WoJC3gGp2r9PAiS.jpg?width=1200",
     "tags": ["healing", "energy", "stability"],
     "scores": {
@@ -224,6 +231,7 @@
     "nameKo": "루비",
     "nameEn": "RUBY",
     "groupId": "H7KD",
+    "xUrl": "https://x.com/H7KD_ruby",
     "photoUrl": "https://assets.st-note.com/img/1761488862-ekNT3xwIU859X4Pv7o6QAWhY.jpg?width=1200",
     "tags": ["idol_kpop", "vocal", "cute"],
     "scores": {
@@ -253,6 +261,7 @@
     "nameKo": "윤",
     "nameEn": "YUN",
     "groupId": "REIEI",
+    "xUrl": "https://x.com/YUNS4M4",
     "photoUrl": "https://assets.st-note.com/img/1761530595-P57NVQpG2HxLw6ktr49ufsCA.jpg?width=1200",
     "tags": ["vocal", "energy", "gap"],
     "scores": {
@@ -287,6 +296,7 @@
     "nameKo": "센",
     "nameEn": "SEN",
     "groupId": "REIEI",
+    "xUrl": "https://x.com/sensamadayo0",
     "photoUrl": "https://assets.st-note.com/img/1761530619-3wqoUlKipInBkc2MbYAuGNSC.jpg?width=1200",
     "tags": ["dance", "facial", "energy"],
     "scores": {
@@ -318,6 +328,7 @@
     "nameKo": "얀",
     "nameEn": "YAN",
     "groupId": "AISYU",
+    "xUrl": "https://x.com/AISYU_yan",
     "photoUrl": "https://assets.st-note.com/img/1761557440-ZzWSmecQPd9tIA7Ny8hs20nw.jpg?width=1200",
     "tags": ["face_cat", "idol_polished", "healing"],
     "scores": {
@@ -347,6 +358,7 @@
     "nameKo": "이키",
     "nameEn": "IKI",
     "groupId": "AISYU",
+    "xUrl": "https://x.com/AISYU_iki",
     "photoUrl": "https://assets.st-note.com/img/1761557462-3Vs9bRTYvg1E4qaGJNmHir0l.jpg?width=1200",
     "tags": ["healing", "pure", "youthful"],
     "scores": {
@@ -376,6 +388,7 @@
     "nameKo": "크림",
     "nameEn": "CREME",
     "groupId": "AISYU",
+    "xUrl": "https://x.com/AISYU_creme",
     "photoUrl": "https://assets.st-note.com/img/1761557479-yoF93hC4eWZz0mdUHgNtIrB8.jpg?width=1200",
     "tags": ["cute", "cheer", "growth"],
     "scores": {
@@ -406,6 +419,7 @@
     "nameKo": "모모",
     "nameEn": "MOMO",
     "groupId": "AISYU",
+    "xUrl": "https://x.com/AISYU_momo",
     "photoUrl": "https://assets.st-note.com/img/1761557497-XjWeMQdzignY73kFRuBtEIf9.jpg?width=1200",
     "tags": ["face_rabbit", "sexy", "idol_polished"],
     "scores": {
@@ -436,6 +450,7 @@
     "nameKo": "아이",
     "nameEn": "AI",
     "groupId": "AMORE",
+    "xUrl": "https://x.com/AiAi__LoveLove",
     "photoUrl": "https://assets.st-note.com/img/1761486634-GNM54Y6wL9fZzuRvqyic7S13.jpg?width=1200",
     "tags": ["face_rabbit", "expression", "charisma"],
     "scores": {
@@ -465,6 +480,7 @@
     "nameKo": "모카",
     "nameEn": "MOKA",
     "groupId": "AMORE",
+    "xUrl": "https://x.com/Moka_kawanari",
     "photoUrl": "https://assets.st-note.com/img/1761486672-aDjCLmlnFU4fB9ShZI7wAbTq.jpg?width=1200",
     "tags": ["sexy", "dance", "expression"],
     "scores": {
@@ -492,7 +508,8 @@
     "name": "エクレア",
     "nameKo": "에쿠레아",
     "nameEn": "EKUREA",
-    "groupId": "AU",
+    "groupId": "AMORE",
+    "xUrl": "https://x.com/AU_ekurea",
     "photoUrl": "https://assets.st-note.com/img/1761486696-9jwYghWnkq30HCGO2N1ZMFif.jpg?width=1200",
     "tags": ["youthful", "healing", "presence"],
     "scores": {
@@ -522,6 +539,7 @@
     "nameKo": "츄이",
     "nameEn": "CHUI",
     "groupId": "AMORE",
+    "xUrl": "https://x.com/chui_nim",
     "photoUrl": "https://assets.st-note.com/img/1761486917-RlNsvpaB8ZGdKcFY3Q0AgJOV.jpg?width=1200",
     "tags": ["elegant", "stability", "presence"],
     "scores": {
@@ -550,6 +568,7 @@
     "nameKo": "사라",
     "nameEn": "SARA",
     "groupId": "ANiMA",
+    "xUrl": "https://x.com/ANiMA_S4rA",
     "photoUrl": "https://assets.st-note.com/img/1761487010-AevXFSo5QG8zdk3KYB1VfMOq.jpg?width=1200",
     "tags": ["elegant", "cool", "expression"],
     "scores": {
@@ -578,6 +597,7 @@
     "nameKo": "메이",
     "nameEn": "MEI",
     "groupId": "ANiMA",
+    "xUrl": "https://x.com/ANiMA_MEI",
     "photoUrl": "https://assets.st-note.com/img/1761487034-YB5oIL6lO3ukWUN8mQHnJET1.jpg?width=1200",
     "tags": ["face_cat", "cute", "energy"],
     "scores": {
@@ -608,6 +628,7 @@
     "nameKo": "루코",
     "nameEn": "RUKO",
     "groupId": "ANiMA",
+    "xUrl": "https://x.com/ANiMA_RUKO",
     "photoUrl": "https://assets.st-note.com/img/1761487053-MXcFTN04Robq2BEDiWgsIl5P.jpg?width=1200",
     "tags": ["cool", "mysterious", "stability"],
     "scores": {
@@ -636,6 +657,7 @@
     "nameKo": "아미",
     "nameEn": "AMI",
     "groupId": "ANiMA",
+    "xUrl": "https://x.com/ANiMA_AMl",
     "photoUrl": "https://assets.st-note.com/img/1761487072-d1zhw23uY0mytfHnArV4egJ9.jpg?width=1200",
     "tags": ["face_rabbit", "cute"],
     "scores": {
@@ -666,6 +688,7 @@
     "nameKo": "니쿠",
     "nameEn": "NIKU",
     "groupId": "A8Escape",
+    "xUrl": "https://x.com/A8E_NiKU",
     "photoUrl": "https://assets.st-note.com/img/1761487256-OpnK0U8253Mg9dfrbteWwvhB.jpg?width=1200",
     "tags": ["face_squirrel", "energy", "youthful"],
     "scores": {
@@ -696,6 +719,7 @@
     "nameKo": "유리",
     "nameEn": "YURI",
     "groupId": "A8Escape",
+    "xUrl": "https://x.com/A8E_Yuri",
     "photoUrl": "https://assets.st-note.com/img/1761487276-E7uQIhryC9gvlXojmDSiGOdK.jpg?width=1200",
     "tags": ["face_cat", "cool", "presence"],
     "scores": {
@@ -726,6 +750,7 @@
     "nameKo": "쿄우",
     "nameEn": "KYOU",
     "groupId": "A8Escape",
+    "xUrl": "https://x.com/A8E_kyou",
     "photoUrl": "https://assets.st-note.com/img/1761487294-t2cs04TBoXyDuxj5QvkhpLCl.jpg?width=1200",
     "tags": ["face_rabbit", "cute", "growth"],
     "scores": {
@@ -755,6 +780,7 @@
     "nameKo": "미와",
     "nameEn": "MIWA",
     "groupId": "A8Escape",
+    "xUrl": "https://x.com/A8E_MiWa",
     "photoUrl": "https://assets.st-note.com/img/1761487315-zeVpr5yoQvXmNq8c3xAP6Twn.jpg?width=1200",
     "tags": ["dance", "vocal", "facial"],
     "scores": {
@@ -785,6 +811,7 @@
     "nameKo": "이나",
     "nameEn": "INA",
     "groupId": "BETTER",
+    "xUrl": "https://x.com/tt_1na",
     "photoUrl": "https://assets.st-note.com/img/1761487369-ga592qCSdNYD3otekAPyOsHF.jpg?width=1200",
     "tags": ["pure", "expression", "presence"],
     "scores": {
@@ -813,6 +840,7 @@
     "nameKo": "소다",
     "nameEn": "SODA",
     "groupId": "BETTER",
+    "xUrl": "https://x.com/tt_5ODA",
     "photoUrl": "https://assets.st-note.com/img/1761487392-eWFSCUuPQj25KONETd47t0Ml.jpg?width=1200",
     "tags": ["cute", "vocal", "facial"],
     "scores": {
@@ -841,6 +869,7 @@
     "nameKo": "츠무기",
     "nameEn": "TSUMUGI",
     "groupId": "BETTER",
+    "xUrl": "https://x.com/tt_tsumu6i",
     "photoUrl": "https://assets.st-note.com/img/1761487409-bdnLUuoxQeY68m3lSMBJR2Vv.jpg?width=1200",
     "tags": ["facial", "youthful", "cute"],
     "scores": {
@@ -869,6 +898,7 @@
     "nameKo": "마왕",
     "nameEn": "M0NE",
     "groupId": "CLITZ",
+    "xUrl": "https://x.com/TRVUM3R3i",
     "photoUrl": "https://assets.st-note.com/img/1761487480-iuCJ0XjxPlAZOKdVLMsRqgvD.jpg?width=1200",
     "tags": ["vocal", "energy", "charisma"],
     "scores": {
@@ -896,6 +926,7 @@
     "nameKo": "카나오",
     "nameEn": "KANAO",
     "groupId": "CLITZ",
+    "xUrl": "https://x.com/CLiTZ_KANAO",
     "photoUrl": "https://assets.st-note.com/img/1761487499-KYETbmpZFXnN2oAL9Q8fkh03.jpg?width=1200",
     "tags": ["energy", "expression", "vocal"],
     "scores": {
@@ -923,6 +954,7 @@
     "nameKo": "유키나",
     "nameEn": "YUKINA",
     "groupId": "CYBERNETICS",
+    "xUrl": "https://x.com/Cynetic_Yukina",
     "photoUrl": "https://assets.st-note.com/img/1761487547-fuH2QlvJDs64gRnEcM5qy1NX.jpg?width=1200",
     "tags": ["vocal", "stability", "cute"],
     "scores": {
@@ -955,6 +987,7 @@
     "nameKo": "세이야",
     "nameEn": "SEIYA",
     "groupId": "CYBERNETICS",
+    "xUrl": "https://x.com/Cynetic_seiya",
     "photoUrl": "https://assets.st-note.com/img/1761487567-ZJXpFB8vV2eYCxHtmPA4RW5w.jpg?width=1200",
     "tags": ["cool", "charisma", "presence"],
     "scores": {
@@ -987,6 +1020,7 @@
     "nameKo": "로지",
     "nameEn": "ROSI",
     "groupId": "CYBERNETICS",
+    "xUrl": "https://x.com/Cynetic_Rosi",
     "photoUrl": "https://assets.st-note.com/img/1761487584-TOEpbPH0N5x1Qgc7M8DAkRZe.jpg?width=1200",
     "tags": ["cool", "mysterious", "presence"],
     "scores": {
@@ -1018,6 +1052,7 @@
     "nameKo": "이치",
     "nameEn": "ICHI",
     "groupId": "CYBERNETICS",
+    "xUrl": "https://x.com/Cynetic_ICHI",
     "photoUrl": "https://assets.st-note.com/img/1761487600-VNQxFmtMjSDlXaHy69qRUZ7G.jpg?width=1200",
     "tags": ["vocal", "energy", "cool"],
     "scores": {
@@ -1049,6 +1084,7 @@
     "nameKo": "하니",
     "nameEn": "HANI",
     "groupId": "EITSUKU",
+    "xUrl": "https://x.com/EITSUKU_HANI",
     "photoUrl": "https://assets.st-note.com/img/1761487842-bxKvG5pVIXy2qrH07dNks1BW.jpg?width=1200",
     "tags": ["cute", "youthful", "healing"],
     "scores": {
@@ -1074,6 +1110,7 @@
     "nameKo": "쵸",
     "nameEn": "CHYO",
     "groupId": "EITSUKU",
+    "xUrl": "https://x.com/EITSUKU_CHYO",
     "photoUrl": "https://assets.st-note.com/img/1761487870-GgPWkF9de3tIC0EUKAMqaD5V.jpg?width=1200",
     "tags": ["cute", "healing", "growth"],
     "scores": {
@@ -1099,6 +1136,7 @@
     "nameKo": "치비",
     "nameEn": "CHIBI",
     "groupId": "EITSUKU",
+    "xUrl": "https://x.com/EITSUKU_CHIBI",
     "photoUrl": "https://assets.st-note.com/img/1761487888-fWKxezVAU2BOLmjIaYNXZJb0.jpg?width=1200",
     "tags": ["face_squirrel", "idol_polished", "pure"],
     "scores": {
@@ -1125,6 +1163,7 @@
     "nameKo": "슈슈",
     "nameEn": "SHUSHU",
     "groupId": "EITSUKU",
+    "xUrl": "https://x.com/EITSUKU_SHUSHU",
     "photoUrl": "https://assets.st-note.com/img/1761487903-R8M2QHjZbpyIGXKgDrk4hYfu.jpg?width=1200",
     "tags": ["cute", "growth", "facial"],
     "scores": {
@@ -1150,6 +1189,7 @@
     "nameKo": "하치",
     "nameEn": "HACHI",
     "groupId": "HAPEEZ",
+    "xUrl": "",
     "photoUrl": "https://assets.st-note.com/img/1761488285-CIzgOuSNLrqZHw2c734V8i5t.jpg?width=1200",
     "tags": ["dance", "vocal", "stability"],
     "scores": {
@@ -1179,6 +1219,7 @@
     "nameKo": "유메",
     "nameEn": "YUME",
     "groupId": "HAPEEZ",
+    "xUrl": "",
     "photoUrl": "https://assets.st-note.com/img/1761488306-ZYz2P9KuvdHRUTOjq4BfaJ5D.jpg?width=1200",
     "tags": ["cute", "unique", "energy"],
     "scores": {
@@ -1207,6 +1248,7 @@
     "nameKo": "이고",
     "nameEn": "IGO",
     "groupId": "HAPEEZ",
+    "xUrl": "",
     "photoUrl": "https://assets.st-note.com/img/1761488322-w3myXjR9Be24oZ1Cu0fJ6xdq.jpg?width=1200",
     "tags": ["cute", "expression", "energy"],
     "scores": {
@@ -1235,6 +1277,7 @@
     "nameKo": "에루",
     "nameEn": "ERU",
     "groupId": "HINONAKA",
+    "xUrl": "https://x.com/HNK_Eru",
     "photoUrl": "https://assets.st-note.com/img/1761488507-LakE4Te2CODKs8wg0ASlHFXV.jpg?width=1200",
     "tags": ["face_rabbit", "pure", "dance"],
     "scores": {
@@ -1265,6 +1308,7 @@
     "nameKo": "아야",
     "nameEn": "AYA",
     "groupId": "HINONAKA",
+    "xUrl": "https://x.com/HNK_Ayaa",
     "photoUrl": "https://assets.st-note.com/img/1761488527-SDaxFYMGTyPc1C3fjrWhqZe2.jpg?width=1200",
     "tags": ["vocal", "expression", "pure"],
     "scores": {
@@ -1295,6 +1339,7 @@
     "nameKo": "나오",
     "nameEn": "NAO",
     "groupId": "HURUCHU",
+    "xUrl": "https://x.com/HURUCHU_NAO",
     "photoUrl": "https://assets.st-note.com/img/1761488715-mirHf1h23FJgseoxCzI8WdqX.jpg?width=1200",
     "tags": ["facial", "healing", "growth"],
     "scores": {
@@ -1324,6 +1369,7 @@
     "nameKo": "하츠",
     "nameEn": "HEARTS",
     "groupId": "HURUCHU",
+    "xUrl": "https://x.com/HURUCHU_HEARTS",
     "photoUrl": "https://assets.st-note.com/img/1761488732-58KBkOIFtxvCJTupga916z0f.jpg?width=1200",
     "tags": ["vocal", "talk", "elegant"],
     "scores": {
@@ -1353,6 +1399,7 @@
     "nameKo": "에스이",
     "nameEn": "S2",
     "groupId": "JIBAKU",
+    "xUrl": "https://x.com/JIBAKU_S2",
     "photoUrl": "https://assets.st-note.com/img/1761489007-wVHa4GpABPD0QhIbXZyMLrJi.jpg?width=1200",
     "tags": ["growth", "youthful", "stability"],
     "scores": {
@@ -1379,6 +1426,7 @@
     "nameKo": "네오",
     "nameEn": "NE0",
     "groupId": "JIBAKU",
+    "xUrl": "https://x.com/JIBAKU_NE0",
     "photoUrl": "https://assets.st-note.com/img/1761489025-5VhJuKEjSI6Dg0BsGPid13R9.jpg?width=1200",
     "tags": ["cute", "youthful", "pure"],
     "scores": {
@@ -1405,6 +1453,7 @@
     "nameKo": "치즈",
     "nameEn": "CHEE2E",
     "groupId": "JIBAKU",
+    "xUrl": "https://x.com/JIBAKU_CHEE2E",
     "photoUrl": "https://assets.st-note.com/img/1761489051-8esVBzOcdi32KEL1pjruyRIo.jpg?width=1200",
     "tags": ["face_squirrel", "youthful", "energy"],
     "scores": {
@@ -1431,6 +1480,7 @@
     "nameKo": "피카",
     "nameEn": "P1KA",
     "groupId": "JIBAKU",
+    "xUrl": "https://x.com/JIBAKU_P1KA",
     "photoUrl": "https://assets.st-note.com/img/1761489071-Uyo5P1lbRiMVuwECZhQFqWrJ.jpg?width=1200",
     "tags": ["face_chick", "cute", "youthful"],
     "scores": {
@@ -1456,6 +1506,7 @@
     "nameKo": "츠루",
     "nameEn": "TSURU",
     "groupId": "KAGERERU",
+    "xUrl": "https://x.com/KageReru_tsuru",
     "photoUrl": "https://assets.st-note.com/img/1761489125-b9vK1QzIFLSUEPA50x2486wO.jpg?width=1200",
     "tags": ["face_rabbit", "youthful", "charming"],
     "scores": {
@@ -1484,6 +1535,7 @@
     "nameKo": "소라",
     "nameEn": "SORA",
     "groupId": "KAGERERU",
+    "xUrl": "https://x.com/KageReru_sora",
     "photoUrl": "https://assets.st-note.com/img/1761489146-IJUKX9n5EkdSZYCOalsLWNTo.jpg?width=1200",
     "tags": ["elegant", "vocal", "mysterious"],
     "scores": {
@@ -1512,6 +1564,7 @@
     "nameKo": "이브",
     "nameEn": "EVVE",
     "groupId": "KAGERERU",
+    "xUrl": "https://x.com/KageReru_evve",
     "photoUrl": "https://assets.st-note.com/img/1761489176-7CscEQ8y3F45hJXITAzaY2tk.jpg",
     "tags": ["youthful", "energy", "sexy"],
     "scores": {
@@ -1540,6 +1593,7 @@
     "nameKo": "미니",
     "nameEn": "MINI",
     "groupId": "KAGERERU",
+    "xUrl": "https://x.com/KageReru_mini",
     "photoUrl": "https://assets.st-note.com/img/1761489190-yhfD5KjLAS01eT8Hvmpi7xaR.jpg?width=1200",
     "tags": ["face_squirrel", "idol_kpop", "pure"],
     "scores": {
@@ -1568,6 +1622,7 @@
     "nameKo": "삐삐",
     "nameEn": "PPIPPI",
     "groupId": "KAGERERU",
+    "xUrl": "https://x.com/KageReru_ppippi",
     "photoUrl": "https://assets.st-note.com/img/1761489207-L6JK5UFbaCmgOPxz7iEWhlkY.jpg?width=1200",
     "tags": ["youthful", "energy", "growth"],
     "scores": {
@@ -1596,6 +1651,7 @@
     "nameKo": "포요",
     "nameEn": "PPOYO",
     "groupId": "LuciDreaM",
+    "xUrl": "https://x.com/LuciDreaM_PPOYO",
     "photoUrl": "https://assets.st-note.com/img/1761489655-5TSyju2Jk4a1rPCgI6oGtlme.jpg?width=1200",
     "tags": ["face_rabbit", "charisma", "unique"],
     "scores": {
@@ -1622,6 +1678,7 @@
     "nameKo": "유나",
     "nameEn": "YUNA",
     "groupId": "LuciDreaM",
+    "xUrl": "https://x.com/LuciDreaM_YUNA",
     "photoUrl": "https://assets.st-note.com/img/1761489672-ovATw7gxJ6ifZkIaGzpXchLr.jpg?width=1200",
     "tags": ["vocal", "energy", "cool"],
     "scores": {
@@ -1648,6 +1705,7 @@
     "nameKo": "리아",
     "nameEn": "RIA",
     "groupId": "LuciDreaM",
+    "xUrl": "https://x.com/LuciDreaM_RIA",
     "photoUrl": "https://assets.st-note.com/img/1761489694-n1fJUYa42ksG8dSyQL50NHC6.jpg?width=1200",
     "tags": ["expression", "vocal", "mysterious"],
     "scores": {
@@ -1674,6 +1732,7 @@
     "nameKo": "다이아",
     "nameEn": "DIA",
     "groupId": "MEMORIA",
+    "xUrl": "https://x.com/Dia_Memoria",
     "photoUrl": "https://assets.st-note.com/img/1761496412-BKuijJkneQXhdEtRcGqMbIvP.jpg?width=1200",
     "tags": ["dance", "energy", "facial"],
     "scores": {
@@ -1702,6 +1761,7 @@
     "nameKo": "로즈",
     "nameEn": "Rose",
     "groupId": "MEMORIA",
+    "xUrl": "https://x.com/Rose_memoria",
     "photoUrl": "https://assets.st-note.com/img/1761496434-h09jCuAUGDKBT4igPNMqvrxy.jpg?width=1200",
     "tags": ["face_cat", "idol_kpop", "facial"],
     "scores": {
@@ -1730,6 +1790,7 @@
     "nameKo": "레몬",
     "nameEn": "LEMON",
     "groupId": "MEMORIA",
+    "xUrl": "https://x.com/lemon_memoria",
     "photoUrl": "https://assets.st-note.com/img/1761496455-0WBS4OxIgdnALova82jHuVzm.jpg?width=1200",
     "tags": ["pure", "energy", "facial"],
     "scores": {
@@ -1758,6 +1819,7 @@
     "nameKo": "나비",
     "nameEn": "NAB2",
     "groupId": "Mewro",
+    "xUrl": "https://x.com/Mewro_NAB2",
     "photoUrl": "https://assets.st-note.com/img/1761496699-G2WTujzIOhiCglH7eUx6PDJa.jpg?width=1200",
     "tags": ["idol_kpop", "pure", "facial"],
     "scores": {
@@ -1786,6 +1848,7 @@
     "nameKo": "로하",
     "nameEn": "R0HA",
     "groupId": "Mewro",
+    "xUrl": "https://x.com/Mewro_R0HA",
     "photoUrl": "https://assets.st-note.com/img/1761496720-Mn3PxzNquodwW9ZCrmUlDKsT.jpg?width=1200",
     "tags": ["face_squirrel", "healing", "stability"],
     "scores": {
@@ -1813,6 +1876,7 @@
     "nameKo": "히아",
     "nameEn": "H1AH",
     "groupId": "Mewro",
+    "xUrl": "https://x.com/Mewro_H1AH",
     "photoUrl": "https://assets.st-note.com/img/1761496736-Z38fGU4JH0mirOxMhFWza2CT.jpg?width=1200",
     "tags": ["elegant", "dance", "face_cat"],
     "scores": {
@@ -1841,6 +1905,7 @@
     "nameKo": "유이",
     "nameEn": "YUI",
     "groupId": "monQ",
+    "xUrl": "https://x.com/yuiyui_monQ",
     "photoUrl": "https://assets.st-note.com/img/1761496970-P2swJe0ANYfRVrlhUqvOHbMK.jpg?width=1200",
     "tags": ["face_rabbit", "dance", "energy"],
     "scores": {
@@ -1869,6 +1934,7 @@
     "nameKo": "리온",
     "nameEn": "R1:on",
     "groupId": "monQ",
+    "xUrl": "https://x.com/rion_monQ",
     "photoUrl": "https://assets.st-note.com/img/1761496991-GaCqxeYlRPZBKN4H61nctiJT.jpg?width=1200",
     "tags": ["pure", "face_squirrel", "mysterious"],
     "scores": {
@@ -1897,6 +1963,7 @@
     "nameKo": "퓨어",
     "nameEn": "PURE",
     "groupId": "monQ",
+    "xUrl": "https://x.com/pure_monQ",
     "photoUrl": "https://assets.st-note.com/img/1761497008-erdKATZPbR02QNFGgsVBjf9Y.jpg?width=1200",
     "tags": ["elegant", "expression", "idol_kpop"],
     "scores": {
@@ -1925,6 +1992,7 @@
     "nameKo": "우사",
     "nameEn": "USA",
     "groupId": "monQ",
+    "xUrl": "https://x.com/usa_monQ",
     "photoUrl": "https://assets.st-note.com/img/1761497023-7A5LnWKaJ08u1vYHIGCcsbyO.jpg?width=1200",
     "tags": ["face_rabbit", "pure", "youthful"],
     "scores": {
@@ -1953,6 +2021,7 @@
     "nameKo": "KYU",
     "nameEn": "큐우",
     "groupId": "monQ",
+    "xUrl": "https://x.com/9_monQ",
     "photoUrl": "https://assets.st-note.com/img/1761497042-VpR8o2wrmbh6SfackC9iKZYQ.jpg?width=1200",
     "tags": ["healing", "facial", "cute"],
     "scores": {
@@ -1980,6 +2049,7 @@
     "nameKo": "소하",
     "nameEn": "SOHA",
     "groupId": "NEKIRU",
+    "xUrl": "https://x.com/Nekiru_SOHA",
     "photoUrl": "https://assets.st-note.com/img/1761497496-2S7HiVhOQuRXaGCPFWkNnErb.jpg?width=1200",
     "tags": ["energy", "charisma", "vocal"],
     "scores": {
@@ -2008,6 +2078,7 @@
     "nameKo": "유즈",
     "nameEn": "YUZU",
     "groupId": "NEKIRU",
+    "xUrl": "https://x.com/Nekiru_YUZU_",
     "photoUrl": "https://assets.st-note.com/img/1761497516-OMWBhGeQYjawVmLv1TpSsg28.jpg?width=1200",
     "tags": ["vocal", "expression", "youthful"],
     "scores": {
@@ -2035,6 +2106,7 @@
     "nameKo": "라이",
     "nameEn": "RAI",
     "groupId": "NEKIRU",
+    "xUrl": "https://x.com/Nekiru_RAI",
     "photoUrl": "https://assets.st-note.com/img/1761497532-62Ll9vQGtgB7iOUCyXqDnmcY.jpg?width=1200",
     "tags": ["elegant", "facial", "dance"],
     "scores": {
@@ -2062,6 +2134,7 @@
     "nameKo": "제로",
     "nameEn": "Zer0",
     "groupId": "NOLIMIT",
+    "xUrl": "https://x.com/NoLimit_Zer0",
     "photoUrl": "https://assets.st-note.com/img/1761497863-H0TVf4qwuox6ekEDM9aYn3m2.jpg?width=1200",
     "tags": ["face_squirrel", "expression", "facial"],
     "scores": {
@@ -2088,6 +2161,7 @@
     "nameKo": "유리코",
     "nameEn": "YURIKO",
     "groupId": "NOLIMIT",
+    "xUrl": "https://x.com/NoLimit_YRK",
     "photoUrl": "https://assets.st-note.com/img/1761497886-uXTsVE9o6SIpCcjYg24PHBk5.jpg?width=1200",
     "tags": ["charisma", "vocal", "energy"],
     "scores": {
@@ -2114,6 +2188,7 @@
     "nameKo": "루카",
     "nameEn": "7uka",
     "groupId": "NOLIMIT",
+    "xUrl": "https://x.com/NoLimit_7uka",
     "photoUrl": "https://assets.st-note.com/img/1761497905-5GOXzPTNVkCliDfqwd2m1JB0.jpg?width=1200",
     "tags": ["expression", "stability", "cool"],
     "scores": {
@@ -2141,6 +2216,7 @@
     "nameKo": "베니",
     "nameEn": "VENI",
     "groupId": "NOLIMIT",
+    "xUrl": "https://x.com/NoLimit_Veni",
     "photoUrl": "https://assets.st-note.com/img/1768850588-Ld3XfZ0oCNaFgwiKkjB4thAu.jpg?width=1200",
     "tags": ["youthful", "vocal", "facial"],
     "scores": {
@@ -2167,6 +2243,7 @@
     "nameKo": "미코",
     "nameEn": "MIKO",
     "groupId": "ORIKA",
+    "xUrl": "https://x.com/Orika_miko",
     "photoUrl": "https://assets.st-note.com/img/1761498208-hVlGpNAO0tDgZE6CWvfJcoSb.jpg?width=1200",
     "tags": ["pure", "vocal", "stability"],
     "scores": {
@@ -2195,6 +2272,7 @@
     "nameKo": "유츠키",
     "nameEn": "UTSUKI",
     "groupId": "ORIKA",
+    "xUrl": "https://x.com/Orika_utsuki",
     "photoUrl": "https://assets.st-note.com/img/1761498229-c4YvQP2WyzfT7sS0KDJCIi1A.jpg?width=1200",
     "tags": ["vocal", "expression", "energy"],
     "scores": {
@@ -2223,6 +2301,7 @@
     "nameKo": "아야카",
     "nameEn": "AYAKA",
     "groupId": "ORIKA",
+    "xUrl": "https://x.com/Orika_ayaa",
     "photoUrl": "https://assets.st-note.com/img/1761498246-1syCIpvlKoeSU80Vt396uwTA.jpg?width=1200",
     "tags": ["youthful", "vocal", "dance"],
     "scores": {
@@ -2249,6 +2328,7 @@
     "nameKo": "코토리",
     "nameEn": "KOTORI",
     "groupId": "RESTART",
+    "xUrl": "https://x.com/RESTARt_KOTORI",
     "photoUrl": "https://assets.st-note.com/img/1761498816-d9WhSD8ul2cJk4igQCLPN67m.jpg?width=1200",
     "tags": ["idol_polished", "stability", "facial"],
     "scores": {
@@ -2278,6 +2358,7 @@
     "nameKo": "미온",
     "nameEn": "M1ON",
     "groupId": "RESTART",
+    "xUrl": "https://x.com/RESTARt_M1ON",
     "photoUrl": "https://assets.st-note.com/img/1761498840-OLJA1T3KC9gSnMo4hrWP6FVu.jpg?width=1200",
     "tags": ["elegant", "presence", "pure"],
     "scores": {
@@ -2307,6 +2388,7 @@
     "nameKo": "리유",
     "nameEn": "RIYU",
     "groupId": "RESTART",
+    "xUrl": "https://x.com/RESTARt_RIYU",
     "photoUrl": "https://assets.st-note.com/img/1761498862-maexhHvnd8TjSWABKZ5y49FQ.jpg?width=1200",
     "tags": ["pure", "idol_kpop", "facial"],
     "scores": {
@@ -2336,6 +2418,7 @@
     "nameKo": "루비",
     "nameEn": "RUBY",
     "groupId": "SOLANIN",
+    "xUrl": "https://x.com/solanin_ruby",
     "photoUrl": "https://assets.st-note.com/img/1761500157-XrCxzSn0UD6M4ot5FEapByT9.jpg?width=1200",
     "tags": ["expression", "dance", "vocal"],
     "scores": {
@@ -2365,6 +2448,7 @@
     "nameKo": "츠바사",
     "nameEn": "TSUBASA",
     "groupId": "SOLANIN",
+    "xUrl": "https://x.com/solanin_tsub2s2",
     "photoUrl": "https://assets.st-note.com/img/1761500192-Nj3Pp5UuIKHLSbzqOAareM7v.jpg?width=1200",
     "tags": ["stability", "vocal", "energy"],
     "scores": {
@@ -2394,6 +2478,7 @@
     "nameKo": "미래",
     "nameEn": "MIRAE",
     "groupId": "SOAROVER",
+    "xUrl": "https://x.com/SoarOver_Mirae",
     "photoUrl": "https://assets.st-note.com/img/1761500247-5xpEPWvXKj21qUThGyBSrdgQ.jpg?width=1200",
     "tags": ["dance", "charisma", "energy"],
     "scores": {
@@ -2423,6 +2508,7 @@
     "nameKo": "린",
     "nameEn": "Lin",
     "groupId": "SOAROVER",
+    "xUrl": "https://x.com/SoarOver_Lin",
     "photoUrl": "https://assets.st-note.com/img/1761500269-DXuG03vyFemPK47oLAdQpYWh.jpg?width=1200",
     "tags": ["energy", "expression", "youthful"],
     "scores": {
@@ -2452,6 +2538,7 @@
     "nameKo": "노아",
     "nameEn": "Noa",
     "groupId": "SOAROVER",
+    "xUrl": "https://x.com/SoarOver_Noa",
     "photoUrl": "https://assets.st-note.com/img/1761500291-jFcsC5PHuNOgldnyXfWDwRI0.jpg?width=1200",
     "tags": ["face_cat", "idol_kpop", "facial"],
     "scores": {
@@ -2481,6 +2568,7 @@
     "nameKo": "유안",
     "nameEn": "uAn",
     "groupId": "SOAROVER",
+    "xUrl": "https://x.com/SoarOver_uAn",
     "photoUrl": "https://assets.st-note.com/img/1761500311-fhE30Vud7gqJlLrX6cPFjIxD.jpg?width=1200",
     "tags": ["elegant", "dance", "charisma"],
     "scores": {
@@ -2510,6 +2598,7 @@
     "nameKo": "레에마이",
     "nameEn": "REMA",
     "groupId": "UGOPOUPEE",
+    "xUrl": "https://x.com/UgoPoupee_My",
     "photoUrl": "https://assets.st-note.com/img/1761500855-jw943RkTmVnUGCMb0Di5rXFE.jpg?width=1200",
     "tags": ["expression", "dance", "cool"],
     "scores": {
@@ -2538,6 +2627,7 @@
     "nameKo": "마이나",
     "nameEn": "MAINA",
     "groupId": "UGOPOUPEE",
+    "xUrl": "https://x.com/UgoPoupee_maina",
     "photoUrl": "https://assets.st-note.com/img/1768899120-Ucz9lDK1oAjt7X0TqeVyOCLw.jpg?width=1200",
     "tags": ["face_rabbit", "facial", "vocal"],
     "scores": {
@@ -2567,6 +2657,7 @@
     "nameKo": "슌",
     "nameEn": "SHUN",
     "groupId": "UGOPOUPEE",
+    "xUrl": "https://x.com/UgoPoupee_shun",
     "photoUrl": "https://assets.st-note.com/img/1768899138-hiCu7qH0bwt3Qk46MEY5UvLG.jpg?width=1200",
     "tags": ["energy", "cute", "expression"],
     "scores": {
@@ -2595,6 +2686,7 @@
     "nameKo": "나나",
     "nameEn": "NANA",
     "groupId": "UGOPOUPEE",
+    "xUrl": "https://x.com/UgoPoupee_nana",
     "photoUrl": "https://assets.st-note.com/img/1768899154-uAOqh1xlgnztEeU4akT82Pp5.jpg?width=1200",
     "tags": ["vocal", "charisma", "mysterious"],
     "scores": {
@@ -2623,6 +2715,7 @@
     "nameKo": "엔",
     "nameEn": "EN",
     "groupId": "UGOPOUPEE",
+    "xUrl": "https://x.com/ENIMUNIDA",
     "photoUrl": "https://assets.st-note.com/img/1768899169-m6E1h5R2NpSvHJtlzxaZ0jOg.jpg?width=1200",
     "tags": ["energy", "facial", "cool"],
     "scores": {
@@ -2651,6 +2744,7 @@
     "nameKo": "세리",
     "nameEn": "SERI",
     "groupId": "WISHLIZ",
+    "xUrl": "https://x.com/Seri_WishLiZ",
     "photoUrl": "https://assets.st-note.com/img/1761501003-06Rb2vZLDe8wnFtQluNYJ5c4.jpg",
     "tags": ["pure", "vocal", "idol_kpop"],
     "scores": {
@@ -2680,6 +2774,7 @@
     "nameKo": "초아",
     "nameEn": "CHOA",
     "groupId": "WISHLIZ",
+    "xUrl": "https://x.com/choA_WishLiZ",
     "photoUrl": "https://assets.st-note.com/img/1761501025-hwoTSzueB7N284JCOMZgav1U.jpg",
     "tags": ["facial", "elegant", "growth"],
     "scores": {
@@ -2709,6 +2804,7 @@
     "nameKo": "히로",
     "nameEn": "HIRO",
     "groupId": "WISHLIZ",
+    "xUrl": "https://x.com/HIRO_WishLiZ",
     "photoUrl": "https://assets.st-note.com/img/1768907236-qanHM8f6BFT3AYrCh9VkjcOb.jpg",
     "tags": ["face_rabbit", "healing", "facial"],
     "scores": {
@@ -2739,6 +2835,7 @@
     "nameKo": "유키",
     "nameEn": "YUKI",
     "groupId": "YOZOPURE",
+    "xUrl": "https://x.com/YZPR_YUKI",
     "photoUrl": "https://assets.st-note.com/img/1761501073-uJZrT2sLHOaGP1KphU0cfk7i.jpg?width=1200",
     "tags": ["elegant", "idol_kpop", "energy"],
     "scores": {
@@ -2769,6 +2866,7 @@
     "nameKo": "하레",
     "nameEn": "HARE",
     "groupId": "YOZOPURE",
+    "xUrl": "https://x.com/YZPR_HARE",
     "photoUrl": "https://assets.st-note.com/img/1761501094-9lmSrWP5fQI2ZghukxK41DGc.jpg?width=1200",
     "tags": ["vocal", "pure", "expression"],
     "scores": {
@@ -2799,6 +2897,7 @@
     "nameKo": "에버",
     "nameEn": "EVER",
     "groupId": "YOZOPURE",
+    "xUrl": "https://x.com/YZPR_EVER",
     "photoUrl": "https://assets.st-note.com/img/1761501115-Ded83BX2VskWJrHCpRvLnmGo.jpg?width=1200",
     "tags": ["dance", "expression", "presence"],
     "scores": {
@@ -2829,6 +2928,7 @@
     "nameKo": "카나",
     "nameEn": "KANA",
     "groupId": "YUMEKI",
+    "xUrl": "https://x.com/YUMEKi_K4NA",
     "photoUrl": "https://assets.st-note.com/img/1761529261-KGExyzXsRALFNPVOid6jS42U.jpg?width=1200",
     "tags": ["facial", "cute", "idol_kpop"],
     "scores": {
@@ -2857,6 +2957,7 @@
     "nameKo": "키리에",
     "nameEn": "KIRIE",
     "groupId": "YUMEKI",
+    "xUrl": "https://x.com/YUMEKi_KIRIE",
     "photoUrl": "https://assets.st-note.com/img/1761529288-LuHBjT1m9iaChfPJDOYl5NFk.jpg?width=1200",
     "tags": ["cute", "growth", "energy"],
     "scores": {
@@ -2885,6 +2986,7 @@
     "nameKo": "사코",
     "nameEn": "SAKO",
     "groupId": "YUMEKI",
+    "xUrl": "https://x.com/YUMEKi_SAKO",
     "photoUrl": "https://assets.st-note.com/img/1761529307-Txu3LNHwlmW72C1iOcUVGBzM.jpg?width=1200",
     "tags": ["pure", "facial", "face_cat"],
     "scores": {
@@ -2913,6 +3015,7 @@
     "nameKo": "미오",
     "nameEn": "MIO",
     "groupId": "YUMEKI",
+    "xUrl": "https://x.com/YUMEKi_MIO",
     "photoUrl": "https://assets.st-note.com/img/1761529325-9HLMD8ZtJ5jvU46Cnu0ORTaz.jpg?width=1200",
     "tags": ["pure", "face_cat", "youthful"],
     "scores": {
@@ -2941,6 +3044,7 @@
     "nameKo": "쿠노",
     "nameEn": "KUNO",
     "groupId": "SHINENNOYUME",
+    "xUrl": "https://x.com/kuno_tenshi",
     "photoUrl": "https://assets.st-note.com/img/1761530413-sFLKI4wNBqfvrel96R8EzAyV.jpg?width=1200",
     "tags": ["vocal", "cute", "comfort"],
     "scores": {
@@ -2970,6 +3074,7 @@
     "nameKo": "라쿠",
     "nameEn": "RAKU",
     "groupId": "ZZZ",
+    "xUrl": "https://x.com/raku_eskoip",
     "photoUrl": "https://assets.st-note.com/img/1761530465-3r0Z4qPO8kjTFVBR5dSMHn2I.jpg?width=1200",
     "tags": ["healing", "stability", "expression"],
     "scores": {
@@ -3000,6 +3105,7 @@
     "nameKo": "토모리",
     "nameEn": "TOMORI",
     "groupId": "ZZZ",
+    "xUrl": "https://x.com/TOMORI__zzZ",
     "photoUrl": "https://assets.st-note.com/img/1761530485-R0IkDK6ZgQbrl5Fa2GwoOTxU.jpg?width=1200",
     "tags": ["vocal", "idol_polished", "cute"],
     "scores": {
@@ -3030,6 +3136,7 @@
     "nameKo": "코루",
     "nameEn": "KORU",
     "groupId": "ZZZ",
+    "xUrl": "https://x.com/KORU__zzZ",
     "photoUrl": "https://assets.st-note.com/img/1761530502-X73hGAxfTOVvkoQRKpr1tU2H.jpg?width=1200",
     "tags": ["elegant", "energy", "sexy"],
     "scores": {
@@ -3060,6 +3167,7 @@
     "nameKo": "와루",
     "nameEn": "WARRIOR",
     "groupId": "ZZZ",
+    "xUrl": "https://x.com/were_warrior",
     "photoUrl": "https://assets.st-note.com/img/1761530519-lKWJr7u2XV1R4zULOcI9xeSn.jpg?width=1200",
     "tags": ["dance", "energy", "expression"],
     "scores": {
@@ -3090,6 +3198,7 @@
     "nameKo": "아리사",
     "nameEn": "ARISA",
     "groupId": "ZZZ",
+    "xUrl": "https://x.com/ARISA__zzZ",
     "photoUrl": "https://assets.st-note.com/img/1761530537-DOVLFet9PIz7whZx0MKy3uon.jpg?width=1200",
     "tags": ["idol_kpop", "elegant", "expression"],
     "scores": {
@@ -3120,6 +3229,7 @@
     "nameKo": "파루아",
     "nameEn": "PARUA",
     "groupId": "MSYH",
+    "xUrl": "https://x.com/MSYH_MURASAKI",
     "photoUrl": "https://assets.st-note.com/img/1761530688-MwOW9vdibc24zRH6NPSZjlmC.jpg?width=1200",
     "tags": ["vocal", "expression", "cute"],
     "scores": {
@@ -3148,6 +3258,7 @@
     "nameKo": "타나",
     "nameEn": "TANA",
     "groupId": "MSYH",
+    "xUrl": "https://x.com/MSYH_BLOOD",
     "photoUrl": "https://assets.st-note.com/img/1761530707-uC7hQBGlrW8mZ9H5wPnAvgxK.jpg?width=1200",
     "tags": ["energy", "vocal", "cool"],
     "scores": {
@@ -3176,6 +3287,7 @@
     "nameKo": "도희",
     "nameEn": "Dohee",
     "groupId": "MSYH",
+    "xUrl": "https://x.com/MSYH_PINK",
     "photoUrl": "https://assets.st-note.com/img/1761530732-e4J9VEcaOCwmnu0USHyYzBTL.jpg?width=1200",
     "tags": ["expression", "charisma", "unique"],
     "scores": {
@@ -3204,6 +3316,7 @@
     "nameKo": "코이",
     "nameEn": "KOI",
     "groupId": "MSYH",
+    "xUrl": "https://x.com/MSYH_NEON_GREEN",
     "photoUrl": "https://assets.st-note.com/img/1761530748-o3u0rkhdENJvbcsBlmnK6GXA.jpg?width=1200",
     "tags": ["energy", "dance", "pure"],
     "scores": {
@@ -3232,6 +3345,7 @@
     "nameKo": "한야",
     "nameEn": "Hanya",
     "groupId": "MSYH",
+    "xUrl": "https://x.com/MSYH_SKYBLUE",
     "photoUrl": "https://assets.st-note.com/img/1761530767-DZ1dbL4RxfJ3qEy9elz2KrCQ.jpg?width=1200",
     "tags": ["expression", "vocal", "facial"],
     "scores": {

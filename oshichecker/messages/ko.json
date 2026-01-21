@@ -32,8 +32,9 @@
   },
   "result": {
     "title": "결과 발표",
-    "subtitle": "당신의 최애 멤버 TOP3",
+    "subtitle": "당신의 최애 멤버 후보 TOP3",
     "yourOshi": "당신의 최애",
+    "finalCandidates": "최종 후보 멤버",
     "rank1": "1위",
     "rank2": "2위",
     "rank3": "3위",

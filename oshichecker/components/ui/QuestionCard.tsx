@@ -1,8 +1,11 @@
 "use client";
 
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Question, QuestionOption } from "@/lib/types";
 import { Locale } from "@/i18n.config";
 import { getLocalizedText } from "@/lib/utils";
+
+const INDEX_KEYS = ["0-9", ...Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i))];
 
 interface QuestionCardProps {
   question: Question;
@@ -61,6 +64,140 @@ export default function QuestionCard({
   const maxSelect = question.maxSelect ?? question.options.length;
   const isFaceAnimal = question.id === "q_face_animal";
   const prefixSizeClass = question.id === "q_genre_worldview" ? "text-base" : "text-sm";
+  const showAlphaIndex = question.id === "q_cover_artist";
+
+  type GroupedOption = {
+    key: string;
+    options: { option: QuestionOption; index: number; text: string }[];
+  };
+
+  const groupedOptions: GroupedOption[] = useMemo(() => {
+    if (!showAlphaIndex) return [];
+
+    const groups: GroupedOption[] = [];
+    const groupOrder = new Map<string, number>();
+
+    question.options.forEach((option, index) => {
+      const optionText = getLocalizedText(option, locale) ?? "";
+      const head = optionText.trim()[0] ?? "";
+      const upperHead = head.toUpperCase();
+      const key = /[A-Z]/.test(upperHead) ? upperHead : /[0-9]/.test(head) ? "0-9" : "0-9";
+
+      if (!groupOrder.has(key)) {
+        groupOrder.set(key, groups.length);
+        groups.push({ key, options: [] });
+      }
+
+      const groupIndex = groupOrder.get(key);
+      if (groupIndex !== undefined) {
+        groups[groupIndex].options.push({ option, index, text: optionText });
+      }
+    });
+
+    return groups;
+  }, [locale, question.options, showAlphaIndex]);
+
+  const availableIndexKeys = useMemo(() => {
+    if (!showAlphaIndex) return new Set<string>();
+    return new Set(groupedOptions.map((group) => group.key));
+  }, [groupedOptions, showAlphaIndex]);
+
+  const [activeIndexKey, setActiveIndexKey] = useState<string | null>(null);
+  const sectionRefs = useRef<Record<string, HTMLDivElement | null>>({});
+
+  useEffect(() => {
+    if (!showAlphaIndex) return;
+    setActiveIndexKey(groupedOptions[0]?.key ?? null);
+  }, [groupedOptions, showAlphaIndex]);
+
+  useEffect(() => {
+    if (!showAlphaIndex) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const key = entry.target.getAttribute("data-index-key");
+            if (key) setActiveIndexKey(key);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "-40% 0px -50% 0px",
+        threshold: 0.1,
+      }
+    );
+
+    Object.values(sectionRefs.current).forEach((el) => {
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [groupedOptions, showAlphaIndex]);
+
+  const scrollToIndex = (key: string) => {
+    if (!showAlphaIndex) return;
+    const target = sectionRefs.current[key];
+    target?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const renderOptionButton = (
+    option: QuestionOption,
+    index: number,
+    optionTextOverride?: string
+  ) => {
+    const optionText = optionTextOverride ?? getLocalizedText(option, locale);
+    const optionId = option.id ?? String(index);
+    const isSelected = selectedOptionIds.includes(optionId);
+    const disableSelect = isMulti && maxReached && !isSelected;
+
+    const iconSrc = isFaceAnimal && option.id ? `/images/animals/${option.id}.svg` : null;
+    const prefix =
+      question.id === "q_genre_worldview" ||
+      question.id === "q_vibe_style" ||
+      question.id === "q_performance_focus" ||
+      question.id === "q_event_communication"
+        ? String.fromCharCode(65 + index)
+        : (optionText?.trim()?.[0] || String.fromCharCode(65 + index)).toUpperCase();
+
+    const handleClick = () => {
+      if (isMulti) {
+        if (disableSelect) return;
+        onToggleOption?.(option, index);
+        return;
+      }
+      onAnswer(option);
+    };
+
+    return (
+      <button
+        key={index}
+        onClick={handleClick}
+        disabled={disableSelect}
+        className={`w-full p-4 rounded-2xl text-left transition-all duration-200 border text-gray-700 font-medium ${
+          isSelected
+            ? "bg-orange-50 border-orange-300 shadow-md"
+            : "bg-white/60 border-gray-200 hover:bg-white hover:border-orange-300 hover:shadow-md"
+        } ${disableSelect ? "opacity-60 cursor-not-allowed" : ""}`}
+      >
+        <span className="flex items-center gap-3">
+          <span
+            className={`w-8 h-8 rounded-full bg-gradient-to-br from-orange-100 to-pink-100 
+                  flex items-center justify-center font-semibold text-orange-500 ${prefixSizeClass}`}
+          >
+            {iconSrc ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={iconSrc} alt={optionText} className="w-8 h-8 object-contain" />
+            ) : (
+              prefix
+            )}
+          </span>
+          <span>{optionText}</span>
+        </span>
+      </button>
+    );
+  };
 
   return (
     <div className="card p-6 w-full animate-scale-in">
@@ -105,65 +242,60 @@ export default function QuestionCard({
       )}
 
       {/* 選択肢 */}
-      <div className="space-y-3">
-        {question.options.map((option, index) => {
-          const optionText = getLocalizedText(option, locale);
-          const optionId = option.id ?? String(index);
-          const isSelected = selectedOptionIds.includes(optionId);
-          const disableSelect = isMulti && maxReached && !isSelected;
+      {showAlphaIndex ? (
+        <div className="space-y-4">
+          <div className="-mx-6 px-6 py-3 sticky top-0 z-10 bg-white/95 backdrop-blur border-b border-orange-50">
+            <div className="flex flex-wrap gap-1.5 text-[10px] font-semibold text-gray-500">
+              {INDEX_KEYS.map((key) => {
+                const hasItems = availableIndexKeys.has(key);
+                const isActive = activeIndexKey === key;
+                return (
+                  <button
+                    key={key}
+                    type="button"
+                    onClick={() => hasItems && scrollToIndex(key)}
+                    disabled={!hasItems}
+                    aria-label={`${key}セクションへ移動`}
+                    className={`px-1.5 py-0.5 rounded-full border transition ${
+                      isActive
+                        ? "bg-orange-500 text-white border-orange-500 shadow"
+                        : hasItems
+                          ? "bg-orange-50 text-orange-600 border-orange-100 hover:bg-orange-100"
+                          : "bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed"
+                    }`}
+                  >
+                    {key}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
 
-          const iconSrc =
-            (isFaceAnimal && option.id)
-              ? `/images/animals/${option.id}.svg`
-              : null;
-          const prefix =
-            (question.id === "q_genre_worldview" ||
-              question.id === "q_vibe_style" ||
-              question.id === "q_performance_focus" ||
-              question.id === "q_event_communication")
-              ? String.fromCharCode(65 + index)
-              : (optionText?.trim()?.[0] || String.fromCharCode(65 + index)).toUpperCase();
-
-          const handleClick = () => {
-            if (isMulti) {
-              if (disableSelect) return;
-              onToggleOption?.(option, index);
-              return;
-            }
-            onAnswer(option);
-          };
-
-          return (
-            <button
-              key={index}
-              onClick={handleClick}
-              disabled={disableSelect}
-              className={`w-full p-4 rounded-2xl text-left transition-all duration-200 border text-gray-700 font-medium ${
-                isSelected
-                  ? "bg-orange-50 border-orange-300 shadow-md"
-                  : "bg-white/60 border-gray-200 hover:bg-white hover:border-orange-300 hover:shadow-md"
-              } ${disableSelect ? "opacity-60 cursor-not-allowed" : ""}`}
-            >
-              <span className="flex items-center gap-3">
-                <span className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-100 to-pink-100 
-                  flex items-center justify-center font-semibold text-orange-500 ${prefixSizeClass}">
-                  {iconSrc ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={iconSrc}
-                      alt={optionText}
-                      className="w-8 h-8 object-contain"
-                    />
-                  ) : (
-                    prefix
+          <div className="space-y-6">
+            {groupedOptions.map((group) => (
+              <div
+                key={group.key}
+                data-index-key={group.key}
+                ref={(el) => {
+                  sectionRefs.current[group.key] = el;
+                }}
+                className="space-y-3"
+              >
+                <div className="text-xs font-semibold text-gray-500">{group.key}</div>
+                <div className="space-y-3">
+                  {group.options.map((item) =>
+                    renderOptionButton(item.option, item.index, item.text)
                   )}
-                </span>
-                <span>{optionText}</span>
-              </span>
-            </button>
-          );
-        })}
-      </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <div className="space-y-3">
+          {question.options.map((option, index) => renderOptionButton(option, index))}
+        </div>
+      )}
 
       {isMulti && (
         <div className="mt-4 flex items-center justify-between">

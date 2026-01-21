@@ -2,7 +2,7 @@
   {
     "id": "KOKOIYA",
     "name": "KOKOIYA",
-    "nameKo": "코코이야",
+    "nameKo": "KOKOIYA",
     "nameEn": "KOKOIYA",
     "color": "#FF6B9D"
   },
@@ -15,9 +15,183 @@
   },
   {
     "id": "REIEI",
-    "name": "REIEI",
-    "nameKo": "REIEI",
+    "name": "零鋭",
+    "nameKo": "레이에이",
     "nameEn": "REIEI",
     "color": "#14b8a6"
+  },
+  {
+    "id": "AISYU",
+    "name": "AISYU",
+    "nameKo": "AISYU",
+    "nameEn": "AISYU"
+  },
+  {
+    "id": "AMORE",
+    "name": "AMORE",
+    "nameKo": "AMORE",
+    "nameEn": "AMORE"
+  },
+  {
+    "id": "ANiMA",
+    "name": "ANiMA",
+    "nameKo": "ANiMA",
+    "nameEn": "ANiMA"
+  },
+  {
+    "id": "A8Escape",
+    "name": "A8Escape",
+    "nameKo": "A8Escape",
+    "nameEn": "A8Escape"
+  },
+  {
+    "id": "BETTER",
+    "name": "BE++ER!!",
+    "nameKo": "BE++ER!!",
+    "nameEn": "BE++ER!!"
+  },
+  {
+    "id": "CLITZ",
+    "name": "C.LiTZ",
+    "nameKo": "C.LiTZ",
+    "nameEn": "C.LiTZ"
+  },
+  {
+    "id": "CYBERNETICS",
+    "name": "CYBERNETICS",
+    "nameKo": "CYBERNETICS",
+    "nameEn": "CYBERNETICS"
+  },
+  {
+    "id": "EITSUKU",
+    "name": "EITSUKU",
+    "nameKo": "EITSUKU",
+    "nameEn": "EITSUKU"
+  },
+  {
+    "id": "HAPEEZ",
+    "name": "Hapeez",
+    "nameKo": "Hapeez",
+    "nameEn": "Hapeez"
+  },
+  {
+    "id": "HINONAKA",
+    "name": "Hinonaka",
+    "nameKo": "Hinonaka",
+    "nameEn": "Hinonaka"
+  },
+  {
+    "id": "HURUCHU",
+    "name": "HURUCHU",
+    "nameKo": "HURUCHU",
+    "nameEn": "HURUCHU"
+  },
+  {
+    "id": "JIBAKU",
+    "name": "JIBAKU",
+    "nameKo": "JIBAKU",
+    "nameEn": "JIBAKU"
+  },
+  {
+    "id": "KAGERERU",
+    "name": "KAGERERU",
+    "nameKo": "KAGERERU",
+    "nameEn": "KAGERERU"
+  },
+  {
+    "id": "LuciDreaM",
+    "name": "LuciDreaM",
+    "nameKo": "LuciDreaM",
+    "nameEn": "LuciDreaM"
+  },
+  {
+    "id": "MEMORIA",
+    "name": "MEMORIA",
+    "nameKo": "MEMORIA",
+    "nameEn": "MEMORIA"
+  },
+  {
+    "id": "Mewro",
+    "name": "Mewro",
+    "nameKo": "Mewro",
+    "nameEn": "Mewro"
+  },
+  {
+    "id": "monQ",
+    "name": "monQ",
+    "nameKo": "monQ",
+    "nameEn": "monQ"
+  },
+  {
+    "id": "NOLIMIT",
+    "name": "NO LiMIT",
+    "nameKo": "NO LiMIT",
+    "nameEn": "NO LiMIT"
+  },
+  {
+    "id": "ORIKA",
+    "name": "ORIKA",
+    "nameKo": "ORIKA",
+    "nameEn": "ORIKA"
+  },
+  {
+    "id": "RESTART",
+    "name": "RE: START＋",
+    "nameKo": "RE: START＋",
+    "nameEn": "RE: START＋"
+  },
+  {
+    "id": "SOLANIN",
+    "name": "solanin",
+    "nameKo": "solanin",
+    "nameEn": "solanin"
+  },
+  {
+    "id": "SOAROVER",
+    "name": "Soar-Over",
+    "nameKo": "Soar-Over",
+    "nameEn": "Soar-Over"
+  },
+  {
+    "id": "UGOPOUPEE",
+    "name": "UgoPoupee",
+    "nameKo": "UgoPoupee",
+    "nameEn": "UgoPoupee"
+  },
+  {
+    "id": "WISHLIZ",
+    "name": "WishLiz",
+    "nameKo": "WishLiz",
+    "nameEn": "WishLiz"
+  },
+  {
+    "id": "YOZOPURE",
+    "name": "YOZOPURE",
+    "nameKo": "YOZOPURE",
+    "nameEn": "YOZOPURE"
+  },
+  {
+    "id": "YUMEKI",
+    "name": "YUMEKi",
+    "nameKo": "YUMEKi",
+    "nameEn": "YUMEKi"
+  },
+  {
+    "id": "SHINENNOYUME",
+    "name": "深淵の夢",
+    "nameKo": "신엔노유메",
+    "nameEn": "shinennoyume"
+  },
+  {
+    "id": "ZZZ",
+    "name": "絶対全力Z",
+    "nameKo": "절대전력Z",
+    "nameEn": "ZZZ"
+  },
+  {
+    "id": "MSYH",
+    "name": "妄想遊戯",
+    "nameKo": "망상유희",
+    "nameEn": "MSYH"
   }
 ]

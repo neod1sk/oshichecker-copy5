@@ -32,8 +32,9 @@
   },
   "result": {
     "title": "Results",
-    "subtitle": "Your Top 3 Bias Members",
+    "subtitle": "Your Top 3 Candidate Biases",
     "yourOshi": "Your Bias",
+    "finalCandidates": "Final candidate members",
     "rank1": "1st",
     "rank2": "2nd",
     "rank3": "3rd",

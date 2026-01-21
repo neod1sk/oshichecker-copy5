@@ -19,9 +19,13 @@ export default function AttributeTag({
   // 有効な属性キーかチェック
   if (!isValidAttributeKey(attributeKey)) {
     return (
-      <span className={`inline-block px-2 py-0.5 rounded-full bg-gray-200 text-gray-600 ${
-        size === "sm" ? "text-xs" : "text-sm"
-      }`}>
+      <span
+        className={`inline-flex w-fit items-center whitespace-nowrap rounded-full bg-gray-200 text-gray-600 leading-tight ${
+          size === "sm"
+            ? "px-1 py-[2px] text-[11px]"
+            : "px-1.5 py-[3px] text-sm"
+        }`}
+      >
         {attributeKey}
       </span>
     );
@@ -32,8 +36,10 @@ export default function AttributeTag({
 
   return (
     <span
-      className={`inline-block px-2 py-0.5 rounded-full font-medium ${
-        size === "sm" ? "text-xs" : "text-sm"
+      className={`inline-flex w-fit items-center whitespace-nowrap rounded-full font-medium leading-tight ${
+        size === "sm"
+          ? "px-1 py-[2px] text-[11px]"
+          : "px-1.5 py-[3px] text-sm"
       }`}
       style={{
         backgroundColor: showColor ? `${color}20` : undefined,
@@ -51,6 +57,8 @@ interface AttributeTagListProps {
   locale: Locale;
   size?: "sm" | "md";
   maxDisplay?: number;
+  showAll?: boolean;
+  direction?: "row" | "col";
 }
 
 export function AttributeTagList({
@@ -58,17 +66,22 @@ export function AttributeTagList({
   locale,
   size = "sm",
   maxDisplay = 3,
+  showAll = false,
+  direction = "row",
 }: AttributeTagListProps) {
   // tagsがundefinedまたは空の場合は何も表示しない
   if (!tags || tags.length === 0) {
     return null;
   }
 
-  const displayTags = tags.slice(0, maxDisplay);
-  const remainingCount = tags.length - maxDisplay;
+  const displayTags = showAll ? tags : tags.slice(0, maxDisplay);
+  const remainingCount = showAll ? 0 : tags.length - maxDisplay;
+
+  const containerClass =
+    direction === "col" ? "flex flex-col gap-1" : "flex flex-wrap gap-1";
 
   return (
-    <div className="flex flex-wrap gap-1">
+    <div className={containerClass}>
       {displayTags.map((tag) => (
         <AttributeTag
           key={tag}

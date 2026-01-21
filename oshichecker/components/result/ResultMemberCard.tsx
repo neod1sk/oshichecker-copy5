@@ -10,18 +10,24 @@ interface ResultMemberCardProps {
   candidate: CandidateMember;
   rank: number;
   locale: Locale;
-  size?: "large" | "small";
+  groupName?: string;
+  hideOverlayName?: boolean;
+  size?: "large" | "small" | "mini";
 }
 
 export default function ResultMemberCard({
   candidate,
   rank,
   locale,
+  groupName,
+  hideOverlayName = false,
   size = "large",
 }: ResultMemberCardProps) {
   const { member } = candidate;
   const name = getLocalizedName(member, locale);
+  const displayName = groupName ? `${name}（${groupName}）` : name;
   const isExternal = isExternalUrl(member.photoUrl);
+  const xUrl = member.xUrl;
 
   // ランクに応じたスタイル
   const rankStyles = {
@@ -95,24 +101,131 @@ export default function ResultMemberCard({
             {/* 名前とエモジ */}
             <div className="flex items-center gap-3">
               <span className="text-2xl">{style.emoji}</span>
-              <h3 className="text-xl font-bold text-gray-800 leading-tight">{name}</h3>
+              <h3 className="text-lg font-bold text-gray-800 leading-tight">{displayName}</h3>
             </div>
 
             {/* 属性タグ */}
-            <div>
-              <AttributeTagList tags={member.tags} locale={locale} maxDisplay={3} />
+            <div className="flex items-start gap-3">
+              <AttributeTagList
+                tags={member.tags}
+                locale={locale}
+                showAll
+                direction="col"
+              />
+              <div className="text-[10px] text-gray-400 leading-tight space-y-0.5 pt-0.5">
+                <div className="flex items-center gap-1">
+                  <span>Score</span>
+                  <span>{candidate.surveyScore.toFixed(1)}</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span>Wins</span>
+                  <span>{candidate.winCount}</span>
+                </div>
+              </div>
             </div>
 
-            {/* スコア情報 */}
-            <div className="text-xs text-gray-400 space-y-1">
-              <div className="flex justify-between">
-                <span>Score</span>
-                <span>{candidate.surveyScore.toFixed(1)}</span>
+            {/* スコア情報（非表示リクエストにより一時停止） */}
+          </div>
+
+      {xUrl && (
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            window.open(xUrl, "_blank", "noopener,noreferrer");
+          }}
+          className="absolute bottom-3 right-3 z-10 w-9 h-9 rounded-full border border-gray-200 bg-white/90 text-gray-600 hover:text-black hover:border-gray-300 transition flex items-center justify-center shadow"
+          aria-label="Xアカウントを開く"
+        >
+          <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </button>
+      )}
+        </div>
+      </div>
+    );
+  }
+
+  // 2位・3位用の小さいカード（miniはさらに縮小）
+  if (size === "mini") {
+    return (
+      <div
+        className={`
+          relative bg-white rounded-lg overflow-hidden
+          ring ring-gray-200 shadow
+        `}
+      >
+        <div className="flex h-20">
+          <div className="relative w-28 h-20 flex-shrink-0 overflow-hidden">
+            {isExternal ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={member.photoUrl}
+                alt={name}
+                className="w-full h-full object-cover object-top"
+              />
+            ) : (
+              <Image
+                src={member.photoUrl}
+                alt={name}
+                fill
+                className="object-cover object-top"
+                sizes="140px"
+              />
+            )}
+
+            <div
+              className="
+                absolute top-1.5 left-1.5 z-10
+                w-6 h-6 rounded-full bg-gray-300
+                flex items-center justify-center
+                text-white font-bold text-[10px] shadow
+              "
+            >
+              {rank}
+            </div>
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+
+            {!hideOverlayName && (
+              <div className="absolute bottom-1.5 left-1.5 right-1.5">
+                <div className="flex items-center gap-1">
+                  <span className="text-xs">✨</span>
+                  <h3 className="text-xs font-bold text-white drop-shadow truncate">{displayName}</h3>
+                </div>
               </div>
-              <div className="flex justify-between">
-                <span>Wins</span>
-                <span>{candidate.winCount}</span>
+            )}
+          </div>
+
+          <div className="flex-1 h-full p-1 flex flex-col justify-start gap-0.5">
+            <div className="flex items-center gap-1 justify-between -mt-1.5">
+              <div className="flex items-center gap-1">
+                <span className="text-xs text-gray-500">#{rank}</span>
+                <h3 className="text-sm font-semibold text-gray-800 truncate">{displayName}</h3>
               </div>
+              {xUrl && (
+                <div className="flex flex-col items-center gap-0.5 text-[10px] text-gray-400 leading-tight mt-1">
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      window.open(xUrl, "_blank", "noopener,noreferrer");
+                    }}
+                    className="shrink-0 w-8 h-8 rounded-full border border-gray-200 text-gray-500 hover:text-black hover:border-gray-300 transition flex items-center justify-center"
+                    aria-label="Xアカウントを開く"
+                  >
+                    <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                  </button>
+                  <div>Score {candidate.surveyScore.toFixed(1)}</div>
+                  <div>Wins {candidate.winCount}</div>
+                </div>
+              )}
+            </div>
+            <div className="-mt-2">
+              <AttributeTagList tags={member.tags} locale={locale} size="sm" showAll />
             </div>
           </div>
         </div>
@@ -120,7 +233,6 @@ export default function ResultMemberCard({
     );
   }
 
-  // 2位・3位用の小さいカード
   return (
     <div
       className={`
@@ -166,14 +278,33 @@ export default function ResultMemberCard({
         <div className="absolute bottom-2 left-2 right-2">
           <div className="flex items-center gap-1">
             <span className="text-base">{style.emoji}</span>
-            <h3 className="text-sm font-bold text-white drop-shadow-lg truncate">{name}</h3>
+            <h3 className="text-sm font-bold text-white drop-shadow-lg truncate">{displayName}</h3>
           </div>
         </div>
       </div>
 
       {/* 情報エリア（コンパクト） */}
-      <div className="p-2">
-        <AttributeTagList tags={member.tags} locale={locale} maxDisplay={2} size="sm" />
+      <div className="p-2 flex items-start justify-between gap-2">
+        <AttributeTagList tags={member.tags} locale={locale} size="sm" showAll />
+        {xUrl && (
+          <div className="flex flex-col items-center gap-1 text-[10px] text-gray-400 leading-tight">
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(xUrl, "_blank", "noopener,noreferrer");
+              }}
+              className="shrink-0 w-8 h-8 rounded-full border border-gray-200 text-gray-500 hover:text-black hover:border-gray-300 transition flex items-center justify-center"
+              aria-label="Xアカウントを開く"
+            >
+              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </button>
+            <div>Score {candidate.surveyScore.toFixed(1)}</div>
+            <div>Wins {candidate.winCount}</div>
+          </div>
+        )}
       </div>
     </div>
   );
